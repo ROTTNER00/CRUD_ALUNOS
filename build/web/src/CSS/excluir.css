@@ -1,0 +1,201 @@
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Importa as fontes "Roboto" e "Montserrat" para usar no design do site */
+
+/* Estilização geral do corpo */
+body {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    color: #000; /* Define a cor do texto como preto */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Alinha os itens no centro horizontalmente */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    height: 75vh; /* Define a altura como 75% da altura da janela */
+    background-color: #e5e5e5; /* Cor de fundo clara */
+}
+
+/* Estilização da caixa centralizada */
+.container {
+    background: transparent; /* Fundo transparente */
+    padding: 20px; /* Preenchimento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 400px; /* Largura fixa de 400px */
+    max-width: 90%; /* Largura máxima de 90% da tela */
+}
+
+/* Estilização do título */
+h2 {
+    font-size: 30px; /* Tamanho da fonte */
+    font-family: 'Roboto', sans-serif; /* Define a fonte Roboto */
+    font-weight: 900; /* Peso da fonte em negrito */
+    color: #000; /* Cor preta para o título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilização do container de botões */
+.button-container {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Alinha os botões ao centro */
+    gap: 20px; /* Espaçamento de 20px entre os botões */
+    margin-top: 10%; /* Distância do topo */
+}
+
+/* Estilização dos botões */
+button {
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte Montserrat */
+    padding: 12px 25px; /* Preenchimento interno do botão */
+    border: none; /* Remove a borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    transition: all 0.3s ease; /* Transição suave ao interagir com o botão */
+    font-weight: bold; /* Texto em negrito */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+/* Estilização do botão de envio */
+button[type="submit"] {
+    background: #00ca2e; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+}
+
+/* Efeito de hover para o botão de envio */
+button[type="submit"]:hover {
+    background: #218838; /* Verde mais escuro */
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Sombra suave */
+}
+
+/* Estilização do botão de cancelar ou outro tipo */
+button[type="button"] {
+    background: #ff0018; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+}
+
+/* Efeito de hover para o botão de cancelar ou outro tipo */
+button[type="button"]:hover {
+    background: #c82333; /* Vermelho mais escuro */
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2); /* Sombra suave */
+}
+
+/* Estilização das mensagens */
+p {
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso médio da fonte */
+    padding: 15px; /* Preenchimento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 10px 0; /* Margem superior e inferior */
+}
+
+/* Estilo de mensagem de sucesso */
+p.success {
+    background-color: #d4edda; /* Fundo verde claro */
+    color: #155724; /* Texto verde escuro */
+    border: 1px solid #c3e6cb; /* Borda verde clara */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo de mensagem de erro */
+p.error {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    color: #721c24; /* Texto vermelho escuro */
+    border: 1px solid #f5c6cb; /* Borda vermelha clara */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilização do link de voltar */
+a {
+    display: inline-flex; /* Exibe como um link em linha com flexbox */
+    margin-top: 20px; /* Distância do topo */
+    padding: 10px 10px; /* Preenchimento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    text-decoration: none; /* Remove a sublinha do link */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover para o link de voltar */
+a:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra suave */
+}
+
+/* Estilos para dispositivos móveis (celulares) */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 24px; /* Ajusta o tamanho do título */
+        margin-bottom: 15px; /* Ajuste do espaçamento inferior */
+    }
+
+    .button-container {
+        flex-direction: column; /* Organiza os botões na vertical */
+        gap: 10px; /* Espaçamento entre os botões */
+    }
+
+    button {
+        font-size: 14px; /* Tamanho da fonte dos botões */
+        padding: 10px 20px; /* Ajuste do preenchimento */
+    }
+
+    p {
+        font-size: 16px; /* Tamanho da fonte das mensagens */
+    }
+
+    a {
+        font-size: 14px; /* Tamanho da fonte do link */
+        padding: 8px 8px; /* Ajuste do preenchimento */
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h2 {
+        font-size: 28px; /* Tamanho do título */
+        margin-bottom: 18px; /* Ajuste do espaçamento inferior */
+    }
+
+    .button-container {
+        gap: 18px; /* Espaçamento entre os botões */
+    }
+
+    button {
+        font-size: 15px; /* Ajuste do tamanho da fonte */
+        padding: 11px 22px; /* Ajuste do preenchimento */
+    }
+
+    p {
+        font-size: 17px; /* Ajuste do tamanho da fonte das mensagens */
+    }
+
+    a {
+        font-size: 15px; /* Ajuste do tamanho do link */
+        padding: 9px 9px; /* Ajuste do preenchimento */
+    }
+    
+    .container_senai img {
+        width: 92%; /* Ajuste da largura da imagem */
+        border-radius: 15px; /* Bordas arredondadas para a imagem */
+        margin: 0 auto; /* Centraliza a imagem */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+    }
+}
+
+/* Estilos para laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        width: 70%; /* Ajuste da largura do container */
+    }
+}
+
+/* Estilos para desktops grandes */
+@media (min-width: 1441px) {
+    .container {
+        width: 60%; /* Ajuste da largura do container */
+    }
+}

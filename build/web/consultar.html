@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Buscar Aluno - SENAI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/CSS/consultar.css">
+</head>
+<body>
+    <header>
+        <h1>SENAI</h1>
+    </header>
+    
+    <main>
+        <button class="imagem-botao" onclick="window.location.href='index.html'">
+            <img src="src/img/Seta Voltar.png" alt="Seta para voltar" class="seta_voltar">
+        </button>
+
+        <form  method="get" target="resultadoConsulta" action="consultar.jsp">
+            <label for="nome">Nome do aluno a consultar:</label>
+            <input id="nome" type="text" name="nome" required>
+            <input type="submit" value="Consultar">
+        </form>
+
+        <iframe id="resultadoConsulta" name="resultadoConsulta" style="border:none; width:100%; height:400px;"></iframe>
+    </main>
+    
+</body>
+</html>

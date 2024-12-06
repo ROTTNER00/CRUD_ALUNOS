@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilização geral para centralizar o título e o formulário */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+/* Estilização do título principal */
+h1 {
+    font-size: 48px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    max-width: 400px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+/* Grupos de inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização do rótulo */
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+
+#btnSalvar {
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 57%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+#btnSalvar:hover {
+    background-color: #45a049; /* Cor verde mais escura quando passar o mouse */
+}
+
+/* Botões */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 5px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilização do botão "Salvar alterações" (input[type="submit"]) */
+
+/* Estilização para alinhamento horizontal dos botões */
+.form-buttons {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+a {
+    display: inline-flex;
+    width: 32%;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+p.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+p.error {
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
+    border: 1px solid #f5c6cb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilo do botão de voltar */
+.imagem-botao {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 50px; /* Diminui o tamanho do botão */
+    height: 50px; /* Diminui o tamanho do botão */
+}
+
+.imagem-botao img {
+    width: 100%;
+    height: auto;
+}
+
+.imagem-botao:hover {
+    transform: scale(1.1);
+}
+/* Estilos responsivos para diferentes tamanhos de tela */
+
+/* Dispositivos móveis */
+@media (max-width: 600px) {
+    form {
+        max-width: 60%;
+        margin-top: 45%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #btnSalvar {
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 81%;
+    text-align: center;
+    margin-left: 5%;
+    }
+    
+    a {
+    display: inline-flex
+;
+    width: 58%;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    form {
+        max-width: 60%;
+        margin-top: 7%; /* Reduz largura do formulário */
+    }
+    
+    #btnSalvar {
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 39%;
+    text-align: center;
+    margin-left: 5%;
+    }
+    
+    a {
+    display: inline-flex;
+    width: 22%;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+}
+
+/* Desktops grandes */
+@media (min-width: 1441px) {
+    form {
+        max-width: 400px; /* Largura fixa */
+    }
+    
+}

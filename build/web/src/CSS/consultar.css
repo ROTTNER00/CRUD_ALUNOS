@@ -1,0 +1,243 @@
+/* Importação das fontes externas */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Importa as fontes do Google Fonts (Oswald, Montserrat, Roboto) para utilização na estilização da página */
+
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reseta margens e preenchimentos padrão de todos os elementos e define o box-sizing para "border-box", que inclui o padding e a borda no cálculo da largura e altura de elementos */
+
+/* Estilo global do corpo da página */
+body {
+    background-color: #dedede; /* Cor de fundo cinza claro */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte Montserrat */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #FF0000; /* Cor de fundo vermelha */
+    text-align: center; /* Alinha o texto centralizado */
+    padding: 20px 0; /* Preenchimento superior e inferior */
+}
+
+/* Estilo do título dentro do cabeçalho */
+header h1 {
+    font-weight: bold; /* Texto em negrito */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    font-size: 6.5rem; /* Tamanho grande da fonte */
+    color: #FFFFFF; /* Cor do texto branca */
+}
+
+/* Estilo do botão de voltar */
+.imagem-botao {
+    position: fixed; /* Posição fixa na tela */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda */
+    padding: 0; /* Remove o preenchimento */
+    cursor: pointer; /* Altera o cursor para pointer (mãozinha) */
+    transition: transform 0.3s ease; /* Transição suave na transformação */
+}
+
+/* Efeito de hover no botão de voltar */
+.imagem-botao:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+}
+
+/* Estilo da seta de voltar */
+.seta_voltar {
+    height: 9vh; /* Define a altura da seta */
+    object-fit: contain; /* Garante que a imagem não perca proporções */
+    margin-top: 180%; /* Distância de 180% do topo (provavelmente ajustado para um posicionamento mais alto) */
+}
+
+/* Estilização do formulário */
+form {
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column; /* Organiza os elementos na vertical */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Alinha os elementos verticalmente no centro */
+    margin: 50px auto; /* Margem automática para centralizar o formulário */
+    max-width: 45%; /* Largura máxima de 45% da tela */
+    padding: 20px; /* Preenchimento interno */
+    background: #ffffff; /* Cor de fundo branca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar o formulário */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-top: 8%; /* Distância do topo */
+}
+
+/* Estilo dos rótulos do formulário */
+form label {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 10px; /* Margem inferior */
+    color: #000; /* Cor preta */
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo dos campos de texto do formulário */
+form input[type="text"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Preenchimento interno */
+    margin-bottom: 20px; /* Margem inferior */
+    border: 1px solid #ddd; /* Borda clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #000; /* Cor do texto */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+/* Efeito ao focar nos campos de texto */
+form input[type="text"]:focus {
+    border-color: #FF0000; /* Altera a cor da borda para vermelho */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Sombra vermelha */
+}
+
+/* Estilo do botão de envio */
+form input[type="submit"] {
+    width: 25%; /* Largura de 25% da tela */
+    padding: 10px; /* Preenchimento interno */
+    background-color: #FF0000; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor tipo pointer (mãozinha) */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+    margin-left: -5%; /* Ajusta o botão um pouco para a esquerda */
+}
+
+/* Efeito ao passar o mouse sobre o botão de envio */
+form input[type="submit"]:hover {
+    background-color: #d00000; /* Altera a cor para um vermelho mais escuro */
+}
+
+/* Estilo da tabela */
+.tab {
+    width: 60%; /* Largura da tabela */
+    margin: 20px auto; /* Centraliza a tabela horizontalmente */
+    border-collapse: collapse; /* Elimina espaços entre as células */
+    background-color: #fff; /* Cor de fundo branca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que os cantos arredondados não sejam cortados */
+}
+
+/* Estilo das células de cabeçalho da tabela */
+.tab th {
+    background-color: #FF0000; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    padding: 15px; /* Preenchimento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+    font-size: 1rem; /* Tamanho da fonte */
+    border: 1px solid #ddd; /* Borda clara */
+}
+
+/* Estilo das células de dados da tabela */
+.tab td {
+    padding: 15px; /* Preenchimento interno */
+    color: #333; /* Cor do texto cinza escuro */
+    text-align: center; /* Alinha o texto ao centro */
+    border: 1px solid #ddd; /* Borda clara */
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+
+/* Para dispositivos móveis (celulares) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 4rem; /* Reduz o tamanho do título */
+    }
+
+    form {
+        max-width: 90%; /* Aumenta a largura do formulário */
+        margin-top: 25%; /* Ajusta o espaçamento superior */
+    }
+
+    form input[type="submit"] {
+        width: 50%; /* Ajusta a largura do botão */
+        margin-left: 0; /* Centraliza o botão */
+    }
+
+    .tab {
+        border: none; /* Remove a borda da tabela */
+        width: 90%; /* Aumenta a largura da tabela */
+        height: 95px; /* Ajusta a altura da tabela */
+        margin-left: 5%; /* Ajusta o alinhamento */
+    }
+
+    .tab th, .tab td {
+        padding: 10px; /* Ajusta o padding das células */
+    }
+
+    .seta_voltar {
+        height: 7vh; /* Ajusta o tamanho da seta */
+        margin-top: 245%; /* Ajusta o espaçamento superior */
+    }
+}
+
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 5rem; /* Ajusta o tamanho do título */
+    }
+
+    .seta_voltar {
+        height: 7vh; /* Ajusta o tamanho da seta */
+        margin-top: 200%; /* Ajusta o espaçamento superior */
+    }
+
+    form {
+        max-width: 70%; /* Ajusta a largura do formulário */
+        margin-top: 7%; /* Ajuste do espaçamento superior */
+    }
+
+    form input[type="submit"] {
+        width: 30%; /* Ajusta a largura do botão */
+    }
+
+    .tab {
+        width: 80%; /* Ajusta a largura da tabela */
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .tab th, .tab td {
+        padding: 12px; /* Ajuste no padding das células */
+    }
+}
+
+/* Para laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    form {
+        max-width: 50%; /* Ajusta a largura do formulário */
+    }
+
+    .seta_voltar {
+        height: 9vh; /* Ajusta o tamanho da seta */
+        margin-top: 230%; /* Ajusta o espaçamento superior */
+    }
+
+    .tab {
+        width: 70%; /* Ajusta a largura da tabela */
+    }
+}
+
+/* Para desktops grandes */
+@media (min-width: 1441px) {
+    .tab {
+        width: 60%; /* Ajusta a largura da tabela */
+    }
+}

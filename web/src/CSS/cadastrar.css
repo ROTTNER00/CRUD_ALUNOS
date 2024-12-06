@@ -1,0 +1,252 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* As fontes externas estão sendo carregadas do Google Fonts para uso no site */
+
+/* Reseta as margens e os preenchimentos de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+    background-color: #dedede; /* Define a cor de fundo como cinza claro */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #FF0000; /* Cor de fundo vermelha */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Define o preenchimento superior e inferior */
+}
+
+/* Estilização do título dentro do cabeçalho */
+header h1 {
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte Montserrat */
+    font-size: 6.5rem; /* Define o tamanho da fonte */
+    color: #FFFFFF; /* Cor do texto branca */
+}
+
+/* Estilo para o botão de voltar */
+.imagem-botao {
+    position: fixed; /* Posiciona o botão fixo no topo da página */
+    top: 20px; /* Define a distância do topo */
+    left: 20px; /* Define a distância da esquerda */
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    padding: 0; /* Remove o preenchimento */
+    cursor: pointer; /* Altera o cursor para pointer ao passar por cima */
+    transition: transform 0.3s ease; /* Transição suave ao transformar */
+}
+
+/* Efeito de aumento no botão de voltar ao passar o mouse */
+.imagem-botao:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+}
+
+/* Estilização da seta de voltar */
+.seta_voltar {
+    height: 9vh; /* Define a altura da seta */
+    object-fit: contain; /* Garante que a imagem mantenha sua proporção */
+    margin-top: 180%; /* Define o deslocamento da seta */
+}
+
+/* Estilização do formulário */
+.form-container {
+    max-width: 45%; /* Largura máxima do formulário */
+    margin: 50px auto; /* Centraliza o formulário */
+    background: white; /* Fundo branco */
+    padding: 15px; /* Preenchimento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o formulário */
+    margin-top: 8%; /* Espaço no topo */
+}
+
+/* Estilo para os grupos de formulário */
+.form-group {
+    margin-bottom: 15px; /* Espaço inferior entre os campos */
+}
+
+/* Estilização dos rótulos dos campos */
+.form-group label {
+    display: block; /* Exibe o rótulo como um bloco */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    font-weight: bold; /* Rótulo em negrito */
+    color: #000; /* Cor preta */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilização dos campos de entrada */
+.form-group input {
+    width: 100%; /* Campo de entrada ocupa toda a largura disponível */
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #ddd; /* Borda clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #000; /* Cor do texto */
+    background-color: #f9f9f9; /* Cor de fundo dos campos */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna para dar profundidade */
+}
+
+/* Efeito ao focar no campo de entrada */
+.form-group input:focus {
+    border-color: #FF0000; /* Altera a cor da borda para vermelho */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Sombra vermelha ao focar */
+}
+
+/* Estilização do botão de envio */
+button[type="submit"] {
+    width: 25%; /* Largura do botão */
+    padding: 10px; /* Preenchimento interno */
+    background-color: #FF0000; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Altera o cursor para pointer */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+    margin-left: 37%; /* Alinha o botão no centro */
+}
+
+/* Efeito ao passar o mouse no botão de envio */
+button[type="submit"]:hover {
+    background-color: #d00000; /* Muda a cor de fundo para um tom mais escuro de vermelho */
+}
+
+/* Estilo para mensagens de feedback */
+.mensagem {
+    color: green; /* Cor do texto verde */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Fonte Arial */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Espaço em torno da mensagem */
+}
+
+/* Estilização do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Espaço acima do rodapé */
+}
+
+/* Estilo para a bandeira no rodapé */
+footer .bandeira {
+    max-width: 15%; /* Limita o tamanho máximo da bandeira */
+    animation: wave 2s infinite; /* Animação de movimento da bandeira */
+    margin-top: 0%; /* Ajusta a margem superior */
+}
+
+/* Definição da animação de onda para a bandeira */
+@keyframes wave {
+    0% { transform: rotate(0); } /* Inicia sem rotação */
+    50% { transform: rotate(5deg); } /* Rotaciona ligeiramente */
+    100% { transform: rotate(0); } /* Retorna à posição inicial */
+}
+
+/* Estilos específicos para dispositivos móveis (celulares) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 4rem; /* Reduz o tamanho do título */
+    }
+
+    .form-container {
+        max-width: 90%; /* Aumenta a largura do formulário */
+        margin-top: 35%; /* Ajusta o posicionamento do formulário */
+    }
+
+    button[type="submit"] {
+        width: 50%; /* Ajusta o tamanho do botão */
+        margin-left: 25%; /* Centraliza o botão */
+    }
+
+    .mensagem {
+        margin-top: 22%; /* Ajusta a margem superior da mensagem */
+    }
+
+    .seta_voltar {
+        height: 7vh; /* Ajusta a altura da seta */
+        margin-top: 245%; /* Ajusta o posicionamento da seta */
+    }
+
+    footer .bandeira {
+        max-width: 30%; /* Aumenta a largura da bandeira */
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 4.5rem; /* Ajusta o tamanho do título */
+    }
+
+    .form-container {
+        max-width: 70%; /* Aumenta a largura do formulário */
+        margin-top: 20%; /* Ajusta o espaçamento superior */
+    }
+
+    button[type="submit"] {
+        width: 40%; /* Ajusta o tamanho do botão */
+        margin-left: 30%; /* Centraliza o botão */
+    }
+
+    .seta_voltar {
+        height: 8vh; /* Ajusta o tamanho da seta */
+    }
+
+    footer .bandeira {
+        max-width: 20%; /* Ajusta o tamanho da bandeira */
+    }
+}
+
+/* Estilos para laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    header h1 {
+        font-size: 6rem; /* Ajuste menor para telas médias */
+    }
+
+    .seta_voltar {
+        height: 9vh;
+        object-fit: contain;
+        margin-top: 220%;/* Ajusta a altura da seta */
+    }
+
+    .form-container {
+        max-width: 50%; /* Ajusta a largura do formulário */
+    }
+
+    button[type="submit"] {
+        width: 30%; /* Ajusta o tamanho do botão */
+        margin-left: 35%; /* Centraliza o botão */
+    }
+
+    footer .bandeira {
+        max-width: 15%; /* Mantém o tamanho da bandeira */
+    }
+}
+
+/* Estilos para desktops grandes */
+@media (min-width: 1441px) {
+    header h1 {
+        font-size: 6.5rem; /* Mantém o tamanho do título */
+    }
+
+    .form-container {
+        max-width: 45%; /* Mantém a largura do formulário */
+    }
+
+    button[type="submit"] {
+        width: 25%; /* Mantém o tamanho do botão */
+        margin-left: 37%; /* Centraliza o botão */
+    }
+
+    footer .bandeira {
+        max-width: 15%; /* Mantém o tamanho da bandeira */
+    }
+}

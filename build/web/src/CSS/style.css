@@ -1,0 +1,325 @@
+/* Importação de fontes externas para o design */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* Fonte Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); /* Fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap'); /* Fonte Poppins */
+
+/* Reseta margens, preenchimento e define box-sizing para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o preenchimento e a borda não afetem o tamanho total dos elementos */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    background-color: #e5e5e5; /* Cor de fundo cinza claro */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat para o corpo do texto */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #FF0000; /* Cor de fundo vermelha */
+    text-align: center; /* Alinha o conteúdo ao centro */
+    padding: 20px 0; /* Preenchimento de 20px no topo e na parte inferior */
+}
+
+/* Estilização do título no cabeçalho */
+header h1 {
+    font-weight: bold; /* Negrito */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    font-size: 6.5rem; /* Tamanho grande para o título */
+    color: #FFFFFF; /* Cor branca para o título */
+}
+
+/* Estilização da seção principal */
+main {
+    display: flex; /* Usa o layout flex para a seção */
+    justify-content: space-between; /* Espaça os elementos igualmente entre si */
+    padding: 20px; /* Preenchimento de 20px ao redor do conteúdo */
+}
+
+/* Estilização do container da imagem */
+.container_senai {
+    flex: 2; /* Define o tamanho do container para ser 2 vezes maior que os outros */
+    margin-left: -20px; /* Ajusta a posição da imagem */
+}
+
+/* Estilo da imagem dentro do container */
+.container_senai img {
+    width: 100%; /* Imagem ocupa 100% da largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* A imagem se ajusta para cobrir a área sem distorcer */
+    margin-top: -20px; /* Ajusta a margem superior */
+}
+
+/* Estilização da seção de ações */
+.back-listar {
+    flex: 2; /* Define o tamanho do container para ser 2 vezes maior que os outros */
+    padding: 0px 19px; /* Preenchimento interno */
+    display: flex; /* Usa o layout flex */
+    justify-content: center; /* Alinha os itens ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-top: -4%; /* Ajuste da margem superior */
+}
+
+/* Estilo do iframe dentro da seção de ações */
+.back-listar iframe {
+    width: 100%; /* Largura total do iframe */
+    height: 500px; /* Altura fixa para o iframe */
+    border: none; /* Remove a borda do iframe */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilização da tabela */
+.tab {
+    width: 100%; /* A tabela ocupa 100% da largura */
+    border-collapse: collapse; /* Remove os espaços entre as células da tabela */
+    margin: 20px auto; /* Margem em torno da tabela */
+    background-color: #fff; /* Cor de fundo branca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da tabela */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar os limites */
+}
+
+/* Estilo das células de cabeçalho da tabela */
+.tab th {
+    background-color: #FF0000; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    padding: 15px; /* Preenchimento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    vertical-align: middle; /* Alinha o texto verticalmente ao centro */
+    font-size: 1rem; /* Tamanho da fonte */
+    border: 1px solid #ddd; /* Borda sutil nas células */
+}
+
+/* Estilo das células da tabela */
+.tab td {
+    padding: 15px; /* Preenchimento interno */
+    color: #333; /* Cor do texto cinza escuro */
+    text-align: center; /* Alinha o texto ao centro */
+    border: 1px solid #ddd; /* Borda sutil nas células */
+}
+
+/* Estilo das imagens dentro das células */
+.tab td img {
+    width: 30px; /* Largura fixa da imagem */
+    height: 30px; /* Altura fixa da imagem */
+    cursor: pointer; /* Exibe um cursor de mãozinha ao passar sobre a imagem */
+}
+
+/* Estilo para o container das ações dentro da tabela */
+.tab td .actions {
+    display: flex; /* Layout flex para as ações */
+    justify-content: center; /* Alinha os itens ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 10px; /* Espaçamento de 10px entre os ícones */
+}
+
+/* Barra vertical entre os ícones */
+.tab td .actions .divider {
+    width: 2px; /* Largura da barra */
+    height: 20px; /* Altura da barra */
+    background-color: #ccc; /* Cor cinza para a barra */
+}
+
+/* Estilização de navegação */
+nav {
+    display: flex; /* Usa o layout flex */
+    gap: 5px; /* Espaçamento entre os itens */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-top: -41%; /* Ajuste da margem superior */
+    margin-right: -1%; /* Ajuste da margem direita */
+}
+
+/* Estilização dos links de navegação */
+nav a {
+    display: inline-block; /* Exibe os links como blocos em linha */
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Preenchimento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-family: 'Oswald', sans-serif; /* Fonte Oswald */
+    font-weight: 400; /* Peso da fonte */
+    border-radius: 30px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove a sublinha */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave nas interações */
+}
+
+/* Efeito de hover nos links de navegação */
+nav a:hover {
+    background-color: #0056b3; /* Cor de fundo azul escuro */
+    color: #FFFFFF; /* Cor do texto branca */
+}
+
+/* Media Query para dispositivos móveis (celulares) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 3.5rem; /* Reduz o tamanho do título */
+    }
+
+    /* Alteração da ordem dos elementos na seção principal */
+    main {
+        display: flex;
+        flex-direction: column; /* Organiza os elementos verticalmente */
+    }
+
+    nav {
+        display: flex;
+        justify-content: center; /* Centraliza os links */
+        flex-wrap: wrap; /* Permite que os links quebrem linha */
+        margin-top: 6px; /* Ajuste da margem superior */
+        gap: 5px; /* Espaçamento entre os links */
+    }
+
+    /* Estilização das ações no celular */
+    .back-listar {
+        order: 1;
+        margin-top: 10%;
+        margin-left: -6%;
+        overflow-x: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        -webkit-overflow-scrolling: touch;
+        width: 113%;
+        box-sizing: border-box;
+    }
+
+    .tab {
+        width: 100%; /* A tabela ocupa toda a largura */
+        font-size: 0.75rem; /* Tamanho da fonte reduzido */
+        border-collapse: collapse; /* Remove os espaços entre células */
+        table-layout: auto; /* Ajuste automático do layout da tabela */
+    }
+
+    .tab th, .tab td {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para telas pequenas */
+        padding: 4px; /* Ajuste do preenchimento */
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        word-wrap: break-word; /* Quebra palavras longas automaticamente */
+    }
+
+    /* Ajustes na imagem no celular */
+    .container_senai {
+        order: 3; /* Altera a ordem dos elementos */
+        margin-top: 20px;
+        text-align: center; /* Centraliza a imagem */
+    }
+
+    .container_senai img {
+        width: 90%;
+        height: auto;
+        margin-top: 0%;
+        margin-left: 5%;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombreamento */
+    }
+
+    .back-listar iframe {
+        height: 300px; /* Reduz a altura do iframe */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Ajuste do tamanho da fonte */
+        padding: 10px 20px; /* Ajuste do preenchimento */
+    }
+}
+
+/* Media Query para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 4.8rem; /* Ajusta o tamanho do título */
+    }
+
+    /* Organização vertical dos elementos */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end; /* Alinha os links à direita */
+        flex-wrap: wrap;
+        margin-top: 6px;
+        gap: 5px;
+    }
+
+    .back-listar {
+        order: 1;
+        margin-top: 5%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tab {
+        width: 100%;
+        font-size: 0.85rem;
+        border-collapse: collapse;
+        table-layout: auto;
+    }
+
+    .tab th, .tab td {
+        font-size: 2rem;
+        padding: 6px;
+    }
+
+    .container_senai {
+        order: 3;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .container_senai img {
+        width: 80%; /* Ajuste do tamanho da imagem */
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-listar iframe {
+        height: 350px; /* Ajuste da altura do iframe */
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 10px 18px; /* Ajuste proporcional */
+    }
+}
+
+/* Media Query para laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    header h1 {
+        font-size: 5.5rem;
+    }
+    
+    /* Estilo de entradas */
+    input {
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    nav {
+        display: flex;
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: -36%;
+        margin-right: -1%;
+    }
+
+    .back-listar iframe {
+        height: 450px;
+        margin-top: 5%;
+    }
+}
+
+/* Media Query para desktops grandes */
+@media (min-width: 1441px) {
+    header h1 {
+        font-size: 6.5rem;
+    }
+}
